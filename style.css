@@ -390,6 +390,31 @@
     margin-top: 24px;
   }
 
+  .container-upload{
+    display: flex;
+    align-items: center;
+  }
+
+  .floating-upload{
+    margin-left: 50px;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #6c5ce7;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.floating-upload:hover{
+    transform: scale(1.1);
+}
+
   .article-list { 
     display: flex; 
     flex-direction: column; 
