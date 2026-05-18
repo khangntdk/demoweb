@@ -67,15 +67,20 @@
     text-decoration: none;
     flex-shrink: 0;
   }
-
-  .logo-icon {
-    width: 34px; height: 34px;
-    background: var(--primary);
-    border-radius: 9px;
-    display: grid;
-    place-items: center;
-    font-size: 18px;
+.nav-logo {
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+    font-weight: 800; 
+    font-size: 18px; 
+    color: var(--white);
+    margin-right: 32px; 
+    flex-shrink: 0;
   }
+  .nav-logo svg { 
+    width: 32px; 
+    height: 32px; 
+}
 
   .nav-links {
     display: flex;
