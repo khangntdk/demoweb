@@ -396,7 +396,8 @@
   }
 
   .floating-upload{
-    margin-left: 50px;
+    position: fixed;
+    /* margin-left: 50px; */
     right: 30px;
     bottom: 30px;
     width: 50px;
