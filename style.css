@@ -50,6 +50,9 @@ nav {
   padding: 0 24px; 
   height: 58px;
 }
+.menu-icon{
+  display: none;
+}
 .nav-logo {
   display: flex; 
   align-items: center; 
@@ -774,6 +777,9 @@ footer {
 .nav-right { 
   display: none; 
 }
+.menu-icon{
+  display: block;
+}
 .nav-hamburger { 
   display: flex; 
 }
@@ -838,7 +844,9 @@ nav {
   padding: 0 12px; 
 }
 
-
+.menu-icon{
+  display: block;
+}
 .nav-inner { 
   padding: 0 12px; 
 }
