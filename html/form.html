@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/form.css">
+<title>TechNova - Đăng nhập / Đăng ký</title>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- Panel bên trái: thương hiệu -->
+  <div class="side">
+    <div>
+      <div class="brand"><span class="brand-dot"></span>TechNova</div>
+      <h2>Học Frontend, AI &amp; DevOps<br>cùng cộng đồng TechNova</h2>
+      <p>Tham gia để lưu bài viết yêu thích, theo dõi lộ trình học và nhận gợi ý nội dung phù hợp với bạn.</p>
+      <div class="tags">
+        <span class="tag html">HTML</span>
+        <span class="tag css">CSS</span>
+        <span class="tag js">JavaScript</span>
+      </div>
+    </div>
+    <div class="foot">© 2026 TechNova. Nền tảng học lập trình cho người mới bắt đầu.</div>
+  </div>
+
+  <!-- Panel bên phải: form -->
+  <div class="form-side">
+
+    <div class="switch">
+      <button type="button" class="active" id="tabLogin" onclick="showPanel('login')">Đăng nhập</button>
+      <button type="button" id="tabRegister" onclick="showPanel('register')">Đăng ký</button>
+    </div>
+
+    <!-- ĐĂNG NHẬP -->
+    <div class="panel active" id="panelLogin">
+      <p class="title">Chào mừng trở lại 👋</p>
+      <p class="subtitle">Đăng nhập để tiếp tục hành trình học tập của bạn.</p>
+
+      <form onsubmit="return false;">
+        <div class="field">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="ban@example.com" required>
+        </div>
+        <div class="field">
+          <label for="loginPass">Mật khẩu</label>
+          <input type="password" id="loginPass" placeholder="Nhập mật khẩu" required>
+        </div>
+
+        <div class="row-between">
+          <label class="checkline"><input type="checkbox"> Ghi nhớ đăng nhập</label>
+          <a href="#" class="link">Quên mật khẩu?</a>
+        </div>
+
+        <button class="btn-primary" type="submit">Đăng nhập</button>
+      </form>
+
+      <div class="divider">HOẶC</div>
+      <div class="socials">
+        <button class="btn-social" type="button">Google</button>
+        <button class="btn-social" type="button">GitHub</button>
+      </div>
+
+      <p class="switch-hint">Chưa có tài khoản? <a href="#" class="link" onclick="showPanel('register')">Đăng ký ngay</a></p>
+    </div>
+
+    <!-- ĐĂNG KÝ -->
+    <div class="panel" id="panelRegister">
+      <p class="title">Tạo tài khoản mới</p>
+      <p class="subtitle">Bắt đầu miễn phí, học mọi lúc mọi nơi.</p>
+
+      <form onsubmit="return false;">
+        <div class="field">
+          <label for="regName">Họ và tên</label>
+          <input type="text" id="regName" placeholder="Nguyễn Văn A" required>
+        </div>
+        <div class="field">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" placeholder="ban@example.com" required>
+        </div>
+        <div class="field">
+          <label for="regPass">Mật khẩu</label>
+          <input type="password" id="regPass" placeholder="Tối thiểu 8 ký tự" required>
+        </div>
+        <div class="field">
+          <label for="regPass2">Xác nhận mật khẩu</label>
+          <input type="password" id="regPass2" placeholder="Nhập lại mật khẩu" required>
+        </div>
+
+        <button class="btn-primary" type="submit">Đăng ký</button>
+
+        <p class="terms">Bằng việc đăng ký, bạn đồng ý với <a href="#" class="link">Điều khoản dịch vụ</a> và <a href="#" class="link">Chính sách bảo mật</a> của TechNova.</p>
+      </form>
+
+      <p class="switch-hint">Đã có tài khoản? <a href="#" class="link" onclick="showPanel('login')">Đăng nhập</a></p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function showPanel(name){
+  const isLogin = name === 'login';
+  document.getElementById('panelLogin').classList.toggle('active', isLogin);
+  document.getElementById('panelRegister').classList.toggle('active', !isLogin);
+  document.getElementById('tabLogin').classList.toggle('active', isLogin);
+  document.getElementById('tabRegister').classList.toggle('active', !isLogin);
+}
+</script>
+
+</body>
+</html>

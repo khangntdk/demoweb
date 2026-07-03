@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova - Đăng ký</title>
+<link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+<div class="wrap" id="formWrap">
+
+  <button type="button" class="close-btn" id="closeBtn" aria-label="Đóng" title="Đóng">✕</button>
+
+  <!-- Panel bên trái: thương hiệu -->
+  <div class="side">
+    <div>
+      <div class="brand"><span class="brand-dot"></span>TechNova</div>
+      <h2>Học Frontend, AI &amp; DevOps<br>cùng cộng đồng TechNova</h2>
+      <p>Tham gia để lưu bài viết yêu thích, theo dõi lộ trình học và nhận gợi ý nội dung phù hợp với bạn.</p>
+      <div class="tags">
+       <img src="../assets/imgs/logo.png" alt="">
+      </div>
+    </div>
+    <!-- <div class="foot">© 2026 TechNova. Nền tảng học lập trình cho người mới bắt đầu.</div> -->
+  </div>
+
+  <!-- Panel bên phải: form đăng ký -->
+  <div class="form-side">
+    <p class="title">Tạo tài khoản mới</p>
+    <p class="subtitle">Bắt đầu miễn phí, học mọi lúc mọi nơi.</p>
+
+    <form onsubmit="return false;">
+      <div class="field">
+        <label for="regName">Họ và tên</label>
+        <input type="text" id="regName" placeholder="Nguyễn Văn A" required>
+      </div>
+      <div class="field">
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" placeholder="name@example.com" required>
+      </div>
+      <div class="field">
+        <label for="regPass">Mật khẩu</label>
+        <input type="password" id="regPass" placeholder="Tối thiểu 8 ký tự" required>
+      </div>
+      <div class="field">
+        <label for="regPass2">Xác nhận mật khẩu</label>
+        <input type="password" id="regPass2" placeholder="Nhập lại mật khẩu" required>
+      </div>
+
+      <button class="btn-primary" type="submit">Đăng ký</button>
+
+      <p class="terms">Bằng việc đăng ký, bạn đồng ý với <a href="#" class="link">Điều khoản dịch vụ</a> và <a href="#" class="link">Chính sách bảo mật</a> của TechNova.</p>
+    </form>
+
+    <p class="switch-hint">Đã có tài khoản? <a href="login.html" class="link">Đăng nhập</a></p>
+  </div>
+
+</div>
+
+<script>
+document.getElementById('closeBtn').addEventListener('click', function () {
+  var wrap = document.getElementById('formWrap');
+  wrap.classList.add('closing');
+  setTimeout(function () {
+    if (document.referrer) {
+      window.history.back();
+    } else {
+      window.location.href = 'index.html';
+    }
+  }, 200);
+});
+</script>
+
+</body>
+</html>
