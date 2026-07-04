@@ -103,22 +103,7 @@ nav {
   gap: 6px; 
   background: #f9fafb;
 }
-.nav-search input {
-  border: none; 
-  background: none; 
-  outline: none;
-  font-size: 13px; 
-  width: 140px; 
-  font-family: inherit; 
-  color: var(--text);
-}
-.nav-search input::placeholder { 
-  color: #aab; 
-}
-.nav-search svg { 
-  color: #9ca3af; 
-  flex-shrink: 0; 
-}
+
 
 .btn-login {
   padding: 7px 16px; 
@@ -151,28 +136,7 @@ nav {
   background: var(--primary-dark); 
 }
 
-/* ── HAMBURGER MENU (mobile only) ── */
-.nav-hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 36px;
-  height: 36px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  margin-left: auto;
-  flex-shrink: 0;
-}
-.nav-hamburger span {
-  display: block;
-  height: 2px;
-  background: var(--text);
-  border-radius: 2px;
-  transition: all .25s;
-}
+
 /* Mobile nav drawer */
 .mobile-nav {
   display: none;
@@ -202,23 +166,7 @@ nav {
   background: #f3f4f6; 
   color: var(--primary); 
 }
-.mobile-nav-bottom {
-  display: flex;
-  gap: 8px;
-  margin-top: 8px;
-  padding-top: 12px;
-  border-top: 1px solid var(--border);
-}
-.mobile-nav-bottom .nav-search {
-  flex: 1;
-}
-.mobile-nav-bottom .nav-search input { 
-  width: 100%; 
-}
-.mobile-nav-bottom .btn-login,
-.mobile-nav-bottom .btn-register {
-  flex-shrink: 0;
-}
+
 
 /* ── LAYOUT ── */
 .container { 
@@ -283,12 +231,7 @@ nav {
   font-size: 13px; 
   margin-bottom: 22px;
 }
-.hero-meta img {
-  width: 32px; 
-  height: 32px; 
-  border-radius: 50%; 
-  object-fit: cover;
-}
+
 
 .btn-read {
   display: inline-block;
@@ -312,11 +255,7 @@ nav {
   position: relative; 
   z-index: 2;
 }
-.hero-image img { 
-  width: 100%; 
-  border-radius: 10px; 
-  object-fit: cover; 
-}
+
 .hero-visual {
   width: 310px; height: 200px;
   background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
@@ -347,45 +286,8 @@ nav {
   align-items: center; 
   gap: 4px;
 }
-.tech-badge span { 
-  font-size: 10px; 
-  opacity: .7; 
-}
-.tech-badge.node { 
-  color: #4ade80; 
-  border-color: #4ade8044; 
-}
-.tech-badge.js { 
-  color: #fbbf24; 
-  border-color: #fbbf2444; 
-}
-.tech-badge.php { 
-  color: #a78bfa; 
-  border-color: #a78bfa44; 
-}
-.tech-badge.db { 
-  color: #60a5fa; 
-  border-color: #60a5fa44; 
-}
 
-.hero-dots {
-  position: absolute; 
-  bottom: 18px; 
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex; 
-  gap: 7px; 
-  z-index: 3;
-}
-.hero-dots span {
-  width: 8px; 
-  height: 8px; 
-  border-radius: 50%;
-  background: rgba(255,255,255,.35);
-}
-.hero-dots span.active { 
-  background: var(--primary); 
-}
+
 
 /* ── ARTICLES SECTION ── */
 .section-title {
@@ -482,10 +384,7 @@ nav {
   background: #fef9c3; 
   color: #92400e; 
 }
-.tag.ai { 
-  background: #fee2e2; 
-  color: #991b1b; 
-}
+
 
 .article-meta {
   display: flex; 
@@ -493,9 +392,6 @@ nav {
   gap: 8px;
   color: var(--muted); 
   font-size: 12px;
-}
-.article-meta svg { 
-  opacity: .6; 
 }
 
 .view-all {
@@ -584,60 +480,7 @@ nav {
   color: var(--muted); 
 }
 
-/* Newsletter */
-.newsletter-card {
-  background: linear-gradient(135deg, #6c63ff 0%, #a855f7 100%);
-  border-radius: var(--radius);
-  padding: 24px 20px;
-  color: #fff;
-  box-shadow: var(--card-shadow);
-}
-.newsletter-card h3 { 
-  font-size: 18px; 
-  font-weight: 800; 
-  margin-bottom: 8px; 
-}
-.newsletter-card p { 
-  font-size: 13px; 
-  opacity: .85; 
-  margin-bottom: 16px; 
-  line-height: 1.5; 
-}
-.newsletter-input {
-  width: 100%; 
-  padding: 11px 14px;
-  border-radius: 8px; 
-  border: none; 
-  outline: none;
-  font-size: 13px; 
-  font-family: inherit;
-  background: rgba(255,255,255,.15);
-  color: #fff; 
-  margin-bottom: 10px;
-}
-.newsletter-input::placeholder { 
-  color: rgba(255,255,255,.65); 
-}
-.btn-subscribe {
-  width: 100%; 
-  padding: 11px;
-  border-radius: 8px; 
-  border: none;
-  background: #fff; 
-  color: var(--primary);
-  font-size: 14px; 
-  font-weight: 700; 
-  cursor: pointer;
-  font-family: inherit; 
-  display: flex; 
-  align-items: center;
-  justify-content: center; 
-  gap: 8px; 
-  transition: opacity .15s;
-}
-.btn-subscribe:hover { 
-  opacity: .9; 
-}
+
 
 /* ── FOOTER ── */
 footer {
@@ -758,13 +601,6 @@ footer {
   color: #34d399; 
   font-size: 24px; 
   font-weight: 800; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; }
-.thumb-aws { 
-  background: linear-gradient(135deg,#1c1917,#292524); 
-  color: #fb923c; 
-  font-size: 28px; 
   display: flex; 
   align-items: center; 
   justify-content: center; }
