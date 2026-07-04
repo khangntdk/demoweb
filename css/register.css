@@ -59,7 +59,6 @@ body{
   justify-content:center;
   cursor:pointer;
   z-index:5;
-  /* transition:background .15s ease, color .15s ease, border-color .15s ease, transform .15s ease; */
 }
 .close-btn:hover{
   background:#f4f2ff;

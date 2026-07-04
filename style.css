@@ -61,7 +61,6 @@ nav {
   font-size: 18px; 
   color: var(--primary);
   margin-right: 32px; 
-  flex-shrink: 0;
 }
 .nav-logo svg { 
   width: 32px; 
