@@ -8,9 +8,9 @@
 </head>
 <body>
 
-<div class="wrap" id="formWrap">
+<div class="wrap">
 
-  <button type="button" class="close-btn" id="closeBtn" aria-label="Đóng" title="Đóng">✕</button>
+  <button type="button" class="close-btn" id="closeBtn" title="Đóng">✕</button>
 
   <!-- Panel bên trái: thương hiệu -->
   <div class="side">
@@ -59,18 +59,11 @@
 </div>
 
 <script>
-document.getElementById('closeBtn').addEventListener('click', function () {
-  var wrap = document.getElementById('formWrap');
-  wrap.classList.add('closing');
-  setTimeout(function () {
-    if (document.referrer) {
-      window.history.back();
-    } else {
-      window.location.href = 'index.html';
-    }
-  }, 200);
+document.getElementById('closeBtn').addEventListener('click', () => {
+  if (document.referrer) {
+    window.history.back();
+  }
 });
 </script>
-
 </body>
 </html>
