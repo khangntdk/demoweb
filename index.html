@@ -6,6 +6,7 @@
 <title>TechNova</title>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="js/main.js">
 <style>
 
  
@@ -17,12 +18,33 @@
 <nav>
   <div class="nav-inner">
     
-    <div class="nav-logo">
-    <div class="menu-icon">
-          ☰
+  <div class="nav-logo">
+    TechNova
+  </div>
+
+  <div class="menu-icon" id="menuBtn">
+    ☰
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#">Trang chủ</a>
+    <a href="#">Lập trình</a>
+    <a href="html/web.html">Web Development</a>
+    <a href="#">AI / Machine Learning</a>
+    <a href="#">Mobile</a>
+    <a href="#">Cơ sở dữ liệu</a>
+    <a href="#">DevOps</a>
+
+    <div class="mobile-nav-bottom">
+      <button class="btn-login">
+        <a href="html/login.html">Đăng nhập</a>
+      </button>
+
+      <button class="btn-register">
+       <a href="html/register.html">Đăng ký</a>
+      </button>
     </div>
-       TechNova
-    </div>
+  </div>
+
     <div class="nav-links">
       <a href="#" class="active">Trang chủ</a>
       <a href="#">Lập trình</a>
@@ -136,7 +158,7 @@
         <!-- Article 2 -->
         <div class="article-card">
           <div class="article-thumb">
-            <div class="thumb-python"><img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Emblem.png" alt=""></div>
+            <div class="thumb-python"><img src="assets/imgs/python-logo-dark.jpg" alt=""></div>
           </div>
           <div class="article-body">
             <a href="#" class="article-title">Python Hướng dẫn chi tiết và ví dụ</a>
